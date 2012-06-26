@@ -1,0 +1,115 @@
+body,td,th {
+	font-family: "Lucida Grande";
+	font-size: 12px;
+}
+a {
+	color: silver;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: overline underline;
+}
+BODY {
+	color: black;
+	background: white;
+	text-shadow: 0px 1px 1px #fff;
+	margin-left: 0px;
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+table {
+
+//border: 1px solid green;
+}
+
+
+#header {
+	width: 800px;
+	height: 51px;
+	margin:0px auto; //this is the horizontally centering 'secret'
+}
+
+#logo {
+	width: 200px;
+	height: 50px;
+	
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: silver;
+}
+#logo:hover {
+	background: red;
+	color: black;
+	text-shadow: 2px 2px 2px #fff;
+}
+#tab1 {
+	width: 100px;
+	height: 50px;
+	line-height: 51px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+#tab1:hover {
+	margin: -1px;
+	border: 1px solid red;
+}
+#tab2 {
+	width:100px;
+	height: 50px;
+	vertical-align: middle;	
+	float: left;
+	text-align: center;
+	line-height: 51px;
+}
+#tab2:hover {
+	margin: -1px;
+	border: 1px solid red;
+}
+#tab3 {
+	width: 100px;
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+	text-align: center;
+	line-height: 51px;
+}
+#tab3:hover {
+	margin: -1px;
+	border: 1px solid red;
+}
+#tab4 {
+        width: 150px;
+        height: 50px;
+        vertical-align: middle;
+        float: left;
+        text-align: center;
+        line-height: 51px;
+}
+#tab4:hover {
+        margin: -1px;
+        border: 1px solid red;
+}
+#headerbar {
+width: 99%;
+	height: 24px;
+	border: 1px solid green;
+	margin: 0px auto;
+	line-height: 24px;
+}
+#maincontent {
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+}
+#footerbar {
+width: 99%;
+	height: 24px;
+	border: 1px solid green;
+	margin: 0px auto;
+	line-height: 24px;
+}
