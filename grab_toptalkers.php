@@ -114,7 +114,7 @@ echo("welcome <b><a href='http://www.google.com'>$full_name</a></b>");
 <div id="maincontent" style="align:center; width='100%'"></div>
 <?php
 	include_once('includes/functions.php');
-	mysql_connect('localhost','nagios','blergh666');
+	mysql_connect('','','');
 if  (!mysql_select_db('noc')) die (mysql_error().":could not connect to NOC db");
 
 $totalsql = "
