@@ -10,7 +10,7 @@ include_once('lib/mailhandler.class.php');
 $ldap = new ldaphandler;
 $ldap->AddHost("",true);
 $ldap->Connect();
-$ldap->SetBase("ou=classifieds,o=ebay");
+$ldap->SetBase("");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
 $full_name = $ret[0]['cn'][0];
 ?>
