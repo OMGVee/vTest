@@ -1,11 +1,2 @@
 Top talking platforms between 2011-11-29  00:00:01 and 2011-12-06  23:59:00
 
-
-
-platform	count
-Marktplaats	631
-eBay Anuncios	416
-Kijiji Global Classifieds	245
-Gumtree	93
-alaMaula	81
-Shared Network	38
