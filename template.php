@@ -8,7 +8,7 @@ include_once('lib/html.class.php');
 include_once('lib/mailhandler.class.php');
 
 $ldap = new ldaphandler;
-$ldap->AddHost("10.32.4.40",true);
+$ldap->AddHost("",true);
 $ldap->Connect();
 $ldap->SetBase("ou=classifieds,o=ebay");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
@@ -60,7 +60,7 @@ xmlHttp.send(null);
 <?php
 include_once "lib/ldaphandler.class.php";
 $ldap = new ldaphandler;
-$ldap->AddHost("10.32.4.40",true);
+$ldap->AddHost("",true);
 $ldap->Connect();
 $ldap->SetBase("ou=classifieds,o=ebay");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
