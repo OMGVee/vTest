@@ -1,4 +1,3 @@
-
 <head>
 <link rel="stylesheet" href="calendar/calendar.css">
 </head>
@@ -14,9 +13,9 @@ include_once('lib/bootstrap.php');
 include_once('lib/html.class.php');
 include_once('lib/mailhandler.class.php');
 $ldap = new ldaphandler;
-$ldap->AddHost("10.32.4.40",true);
+$ldap->AddHost("",true);
 $ldap->Connect();
-$ldap->SetBase("ou=classifieds,o=ebay");
+$ldap->SetBase("ou=,o=");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
 $full_name = $ret[0]['cn'][0];
 
@@ -40,7 +39,7 @@ $s=$today['seconds'];
 
 $now = $y . "-" . $m . "-" . "d" . " " . $h . ":" . $min . ":" . $s;
 
-$link = mysql_connect('127.0.0.1','nagios','blergh666');
+$link = mysql_connect('127.0.0.1','nagios','somepass');
 mysql_select_db('noc');
 
 $sql = "
