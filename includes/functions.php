@@ -9,7 +9,7 @@ define ('INCLUDEPATH',dirname(__FILE__).'/../includes/');
 define ('IMAGEPATH',dirname(__FILE__).'/../images/');
 define ('LIBPATH',dirname(__FILE__).'/../lib/');
 define ('TMPIMGPATH',dirname(__FILE__).'/../tmpImages/');
-define ('LOGPATH','/usr/local/cmdb/www/noc/vTest/log/');
+define ('LOGPATH','../log/');
 
 
 function dateToSqlFormat($inputDate)
