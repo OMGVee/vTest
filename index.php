@@ -8,9 +8,9 @@ include_once('lib/html.class.php');
 include_once('lib/mailhandler.class.php');
 
 $ldap = new ldaphandler;
-$ldap->AddHost("10.32.4.40",true);
+$ldap->AddHost("",true);
 $ldap->Connect();
-$ldap->SetBase("ou=classifieds,o=ebay");
+$ldap->SetBase("ou=,o=");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
 $full_name = $ret[0]['cn'][0];
 ?>
@@ -60,9 +60,9 @@ xmlHttp.send(null);
 <LINK href="css/vStyle.css" rel="stylesheet" type="text/css">
 <?php
 $ldap = new ldaphandler;
-$ldap->AddHost("10.32.4.40",true);
+$ldap->AddHost("",true);
 $ldap->Connect();
-$ldap->SetBase("ou=classifieds,o=ebay");
+$ldap->SetBase("ou=,o=");
 $ret = $ldap->Search("uid=".$_SERVER['PHP_AUTH_USER'],array("cn"));
 $full_name = $ret[0]['cn'][0];
 
